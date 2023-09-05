@@ -1,0 +1,134 @@
+:root {
+    --clr-primary-orange: hsl(25, 97%, 53%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(217, 12%, 63%);
+    --clr-neutral-300: hsl(216, 12%, 54%);
+    --clr-neutral-800: hsl(213, 19%, 18%);
+    --clr-neutral-900: hsl(216, 12%, 8%);
+
+    
+    --clr-transparent-200: hsl(216, 12%, 54%, 0.15);
+    --clr-transparent-300: hsla(216, 12%, 54%, 0.35);
+
+    --ff-base: Overpass;
+
+    --fw-base: 400;
+    --fw-bold: 700;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-base);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-900);
+}
+
+.rating, .thank_you {
+    position: absolute;
+    background-image: linear-gradient(var(--clr-transparent-300), var(--clr-neutral-800));
+    color: var(--clr-neutral-100);
+    margin: 3rem;
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    gap: 0.8rem;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.rating {
+    visibility: visible;
+    /* visibility: hidden; */
+}
+
+.close_button {
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+}
+
+
+.star_icon {
+    background-color: var(--clr-transparent-200);
+    padding: 0.8rem;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.star_icon:is(:hover, :focus) {
+    background-color: var(--clr-transparent-300);
+}
+
+.title {
+    align-self: flex-start;
+    font-size: 25px;
+    margin: 0;
+    color: var(--clr-neutral-100);
+}
+
+.text {
+    font-size: 15px;
+    margin: 0;
+    color: var(--clr-neutral-200);
+}
+
+.scores {
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-transparent-200);
+    color: var(--clr-neutral-200);
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.score:is(:hover, :focus) {
+    background-color: var(--clr-transparent-300);
+    color: var(--clr-neutral-100);
+}
+
+.button {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.button:is(:hover, :focus){
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-orange);
+
+}
+
+.thank_you {
+    visibility: hidden;
+    /* visibility: visible; */
+}
