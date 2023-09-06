@@ -34,13 +34,26 @@ body, html{
     align-items: center;
     background-color: var(--clr-neutral-900);
 }
+.button {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 25px;
+}
+
+.button:hover{
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-orange);
+
+}
 
 .rating, .thank_you {
     position: absolute;
-    background-image: linear-gradient(var(--clr-transparent-300), var(--clr-neutral-800));
+    background-image: linear-gradient(var(--clr-neutral-800), var(--clr-neutral-900));
     color: var(--clr-neutral-100);
     margin: 3rem;
-    padding: 0.8rem;
+    padding: 1rem 0.8rem;
 
     display: flex;
     flex-direction: column;
@@ -49,12 +62,10 @@ body, html{
     gap: 0.8rem;
     border-radius: 25px;
     max-width: 400px;
+    user-select: none;
 }
 
-.rating {
-    visibility: visible;
-    /* visibility: hidden; */
-}
+/* rating */
 
 .close_button {
     background-color: transparent;
@@ -106,12 +117,17 @@ body, html{
     user-select: none;
 }
 
-.score:is(:hover, :focus) {
+.score:is(:hover) {
     background-color: var(--clr-transparent-300);
     color: var(--clr-neutral-100);
 }
 
-.button {
+.selected, .selected:hover {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+}
+
+.submit_button {
     background-color: var(--clr-primary-orange);
     color: var(--clr-neutral-100);
     border: none;
@@ -122,13 +138,42 @@ body, html{
     letter-spacing: 0.15rem;
 }
 
-.button:is(:hover, :focus){
+.submit_button:hover{
     background-color: var(--clr-neutral-100);
     color: var(--clr-primary-orange);
 
 }
 
-.thank_you {
+/* thank you */
+
+.info_text{
+    margin: 0.4rem;
+    color: var(--clr-primary-orange);
+    background-color: var(--clr-neutral-800);
+    padding: 0.5rem;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.thanks_title {
+    font-size: 25px;
+    margin: 0;
+    color: var(--clr-neutral-100);
+}
+
+.thanks_text {
+    font-size: 15px;
+    margin: 0;
+    color: var(--clr-neutral-200);
+    text-align: center;
+}
+
+
+
+.hidden {
     visibility: hidden;
-    /* visibility: visible; */
+}
+
+.visible {
+    visibility: visible;
 }

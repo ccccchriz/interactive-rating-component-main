@@ -25,7 +25,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="rating">
+      <button id="summon" class="button">Summon rating popup</button>
+      <div class="rating hidden">
         <button class="close_button">
           <img src="images/icon-star.svg" alt="star" class="star_icon" />
         </button>
@@ -41,13 +42,21 @@
           <div class="score">4</div>
           <div class="score">5</div>
         </div>
-        <button class="button">Submit</button>
+        <button class="submit_button">Submit</button>
       </div>
-      <div class="thank_you">
-        You selected
+      <div class="thank_you hidden">
+        <img src="images/illustration-thank-you.svg" alt="phone" />
+
         <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch!
+        <p class="info_text">
+          You selected <span class="user_rating">1</span> out of 5
+        </p>
+
+        <p class="thanks_title">Thank you!</p>
+        <p class="thanks_text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
       </div>
     </div>
 
