@@ -126,6 +126,7 @@ body, html{
 .score_num:is(:hover) {
     background-color: var(--clr-primary-orange);
     color: var(--clr-neutral-100);
+    cursor: pointer;
 }
 
 .submit_button {
