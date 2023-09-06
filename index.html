@@ -27,20 +27,35 @@
     <div class="container">
       <button id="summon" class="button">Summon rating popup</button>
       <div class="rating visible">
-        <button class="close_button">
+        <div class="close_button">
           <img src="images/icon-star.svg" alt="" class="star_icon" />
-        </button>
-        <p class="title">How did we do?</p>
+        </div>
+        <h1 class="title">How did we do?</h1>
         <p class="text">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
         <div class="scores">
-          <div class="score">1</div>
-          <div class="score">2</div>
-          <div class="score">3</div>
-          <div class="score">4</div>
-          <div class="score">5</div>
+          <label class="score_num">
+            <input type="radio" id="1" name="rating" value="1" class="score" />
+            <span class="number">1</span>
+          </label>
+          <label class="score_num">
+            <input type="radio" id="2" name="rating" value="2" class="score" />
+            <span class="number">2</span>
+          </label>
+          <label class="score_num">
+            <input type="radio" id="3" name="rating" value="3" class="score" />
+            <span class="number">3</span>
+          </label>
+          <label class="score_num">
+            <input type="radio" id="4" name="rating" value="4" class="score" />
+            <span class="number">4</span>
+          </label>
+          <label class="score_num">
+            <input type="radio" id="5" name="rating" value="5" class="score" />
+            <span class="number">5</span>
+          </label>
         </div>
         <button class="submit_button">Submit</button>
       </div>
@@ -53,7 +68,7 @@
         </p>
 
         <p class="thanks_title">Thank you!</p>
-        <p class="thanks_text">
+        <p class="text">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
         </p>
