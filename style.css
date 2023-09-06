@@ -146,6 +146,10 @@ body, html{
 
 /* thank you */
 
+.thank_you {
+    cursor: pointer;
+}
+
 .info_text{
     margin: 0.4rem;
     color: var(--clr-primary-orange);
