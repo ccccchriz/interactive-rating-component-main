@@ -4,7 +4,6 @@ class Rating {
   }
 
   setScore = (event) => {
-    console.log(event.target);
     this.rating = parseInt(event.target.id);
   };
 
